@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Pizzeria La Toscanella</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {
+        font-family: "Times New Roman", serif;
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+    
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: serif;
+        letter-spacing: 5px
+    }
+    
+    td {
+        font-family: serif;
+        font-size: 24px;
+    }
+    
+    ul {
+        column-count: 4;
+    }
+</style>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<body>
+
+    <div id="home" class="w3-content">
+        <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide">
+            <a href="#home" class="w3-bar-item w3-button">Pizzeria La Toscanella</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <button onclick="toggleDarkMode()">Toggle dark mode</button>
+
+            </div>
+        </div>
+
+        <script>
+            function toggleDarkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <!-- Image in Display Container -->
+        <div class=" w3-padding-top-48">
+            <div class="w3-display-container">
+
+                <img src="images/cover.jpg" alt="Pizza" style="width:100%">
+
+                <div class="w3-display-bottomleft w3-padding-small w3-opacity w3-hide-small">
+                    <h2>Pizza</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="w3-padding-top-64">
+            <div class="w3-row">
+
+                <div class="w3-half w3-padding-large w3-hide-small">
+                    <img src="images/oven.jpg" class="w3-round w3-image w3-opacity-min" alt="Table" style="width:100%">
+                </div>
+
+                <div class="w3-half w3-padding-large">
+                    <h1 class="w3-center">About Catering</h1><br>
+                    <h5 class="w3-center">Tradition since 1889</h5>
+                    <p class="w3-large">
+                        The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="w3-large w3-text-grey w3-hide-medium">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div id="menu" class="w3-padding-top-64">
+            <h1 class="w3-center">Our Menu</h1>
+            <div class="w3-row">
+
+                <div class="w3-full l6 m6 w3-padding-large">
+
+                    <!-- starters -->
+                    <table class="w3-table">
+                        <tr class="w3-amber">
+                            <th colspan=2>
+                                <h2 class="w3-center">Sides/Starters</h2>
+                            </th>
+                        </tr>
+                        <script type="text/javascript " src="starters.js "></script>
+                        <!-- <tr>
+                            <td colspan=2>Chicken Wings - Maple Bourbon, Buffalo, BBQ, or Plain</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-right-align">6 for</td>
+                            <td class="w3-right-align">$6.95</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-right-align">9 for</td>
+                            <td class="w3-right-align">$9.95</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-right-align">12 for</td>
+                            <td class="w3-right-align">$12.95</td>
+                        </tr> -->
+                    </table>
+
+                    <!-- special pizzas -->
+                    <table class="w3-table ">
+                        <tr class="w3-amber">
+                            <th colspan=3 class="w3-center ">
+                                <h2>Pizza</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="w3-right-align ">10"</td>
+                            <td class="w3-right-align">14"</td>
+                        </tr>
+                        <script type="text/javascript" src="specialpizza.js"></script>
+                    </table>
+
+                    <!-- create your own pizza -->
+                    <table class="w3-table">
+                        <tr class="w3-amber">
+                            <th colspan=3 class="w3-center">
+                                <h2>Create Your Own Pizza</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="w3-right-align">10"</td>
+                            <td class="w3-right-align">14"</td>
+                        </tr>
+                        <script type="text/javascript" src="pizza.js"></script>
+                        <script type="text/javascript" src="pizzatoppings.js"></script>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="w3-container">
+            <h1 class="w3-center w3-amber">Contact</h1>
+
+            <p class="w3-text-blue-grey w3-large">
+                <b>Pizzeria La Toscanella, 148 VT-100, West Dover, VT 05356</b></p>
+            <p>(802) 464-5070</p>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <p>Monday Closed</p>
+                    <p>Tuessday 11:30AM - 8PM</p>
+                    <p>Wednesday 11:30AM - 8PM</p>
+                    <p>Thursday 11:30AM - 8PM</p>
+                </div>
+                <div class="w3-half">
+                    <p>Friday 11:30AM - 9PM</p>
+                    <p>Saturday 11:30AM - 9PM</p>
+                    <p>Sunday Closed</p>
+                </div>
+            </div>
+
+            <img src="map.jpg" class="w3-image" style="width:100%">
+        </div>
+</body>
+
+</html>
